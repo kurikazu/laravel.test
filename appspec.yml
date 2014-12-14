@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-	destination: /home/ec2-user/laraveltest/
+  - source: /index.html
+    destination: /var/www/html/
 hooks:
   BeforeInstall:
     - location: scripts/start_server
@@ -12,3 +12,4 @@ hooks:
     - location: scripts/stop_server
       timeout: 300
       runas: root
+
